@@ -1,7 +1,7 @@
 //dependencies
 const React = require('react')
 
-//default layout
+//default layout for pages
 function Def (html) {
     return (
         <html>
