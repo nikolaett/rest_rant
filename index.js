@@ -1,10 +1,16 @@
 //Dependencies
-const express = require('express');
-const app = express();
+require('dotenv').config()
+const express = require('express')
+const app = express()
 
 //Homepage
 app.get('/', (req, res) => {
     res.send('Home Page')
 })
 
-app.listen(3000)
+//Error Page
+app.get('*', (req, res) => {
+    res.status(404).send('<h1>404 Page</h1>')
+})
+
+app.listen(process.env.PORT)
