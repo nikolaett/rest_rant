@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
         state: 'NY',
         cuisines: 'Tarts, Bakery',
         pic: '/images/blackberry-tart.jpg'
-        //Photo by <a href="https://unsplash.com/@kimbroughdaniels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kim Daniels</a> on <a href="https://unsplash.com/photos/OrkEasJeY74?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        //Photo by <a href="https://cookinglsl.com/wp-content/uploads/2018/06/low-carb-keto-tartlets-13-1-660x894.jpg">Kim Daniels</a> on <a href="https://unsplash.com/photos/OrkEasJeY74?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     }]
     res.render('places/index', { places })
 })

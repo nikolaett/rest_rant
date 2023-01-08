@@ -9,28 +9,30 @@ import Card from 'react-bootstrap/Card'
 function index(data) {
     let placesFormatted = data.places.map((place) => {
         return(
-            <div className="col-sm-6">
-                <Row xs={1} md={2} className={"ms-3 pb-3"}>
-                    <Col className="md-4">
-                        <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className={'h-100'}>
-                            <Card.Img variant="top" src={place.pic} alt={place.name}/>
-                            <Card.Body>
-                                <Card.Title>{place.name}</Card.Title>
-                                <Card.Text className="mb-0">{place.cuisines}</Card.Text>
-                                <Card.Text>Located in {place.city}, {place.state}.</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+            <div>
+                <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className="mb-3">
+                    <Card.Img variant="top" src={place.pic} alt={place.name}/>
+                        <Card.Body>
+                            <Card.Title>{place.name}</Card.Title>
+                            <Card.Text className="mb-0">{place.cuisines}</Card.Text>
+                            <Card.Text>Located in {place.city}, {place.state}.</Card.Text>
+                        </Card.Body>
+                </Card>
             </div>
         )
     })
     return(
         <Def>
             <main>
-                <h1>Places Index</h1>
-                <div className="row">
-                    {placesFormatted}
+                <div>
+                    <h1>Places</h1>
+                </div>
+                <div>
+                    <Row xs={1} md={2} className="ms-3">
+                        <Col>
+                            {placesFormatted}
+                        </Col>
+                    </Row>
                 </div>
             </main>
         </Def>
