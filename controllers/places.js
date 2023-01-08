@@ -8,13 +8,15 @@ router.get('/', (req, res) => {
         city: 'Seattle',
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/thai-curry.jpg'
+        //Photo by <a href="https://unsplash.com/@grimnoire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">emy</a> on <a href="https://unsplash.com/photos/XoByiBymX20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     }, {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/cat-cafe.jpg'
+        //Photo by <a href="https://unsplash.com/it/@rebaspike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reba Spike</a> on <a href="https://unsplash.com/photos/xxIyFBpcDuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     }]
     res.render('places/index', { places })
 })
