@@ -17,6 +17,13 @@ router.get('/', (req, res) => {
         cuisines: 'Coffee, Bakery',
         pic: '/images/cat-cafe.jpg'
         //Photo by <a href="https://unsplash.com/it/@rebaspike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reba Spike</a> on <a href="https://unsplash.com/photos/xxIyFBpcDuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    }, {
+        name: 'SweeTart Bakery',
+        city: 'New York City',
+        state: 'NY',
+        cuisines: 'Tarts, Bakery',
+        pic: '/images/blackberry-tart.jpg'
+        //Photo by <a href="https://unsplash.com/@kimbroughdaniels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kim Daniels</a> on <a href="https://unsplash.com/photos/OrkEasJeY74?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     }]
     res.render('places/index', { places })
 })
