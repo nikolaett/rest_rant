@@ -1,8 +1,8 @@
 //dependencies
 const React = require('react')
 const Def = require('./default')
-import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
 
 //Home Page
 function home() {
@@ -13,7 +13,6 @@ function home() {
                     <Navbar.Brand href='/'>R&R</Navbar.Brand>
                 </Container>
             </Navbar>
-
         </Def> 
     )
 }

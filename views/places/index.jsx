@@ -2,14 +2,13 @@
 const React = require('react')
 const Def = require('../default')
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 
 //places index
 function index(data) {
     let placesFormatted = data.places.map((place) => {
         return(
-            <div>
+            <div className="col-sm-6">
                 <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className="mb-3">
                     <Card.Img variant="top" src={place.pic} alt={place.name}/>
                         <Card.Body>
@@ -29,9 +28,7 @@ function index(data) {
                 </div>
                 <div>
                     <Row xs={1} md={2} className="ms-3">
-                        <Col>
                             {placesFormatted}
-                        </Col>
                     </Row>
                 </div>
             </main>
