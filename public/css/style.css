@@ -3,6 +3,20 @@ h1 {
     color: #6a8d73ff;
 }
 
+html, body{
+    height:100%;
+    margin:0;
+}
+.wrapper {
+    min-height:100%;
+}
+
+.footer, .push, .header {
+    height: 50px;
+    background-color: #6a8d73ff;
+    color: #e4ffe1ff;
+}
+
 /* CSS HEX */
 /*--russian-green: #6a8d73ff;
 --light-goldenrod-yellow: #f4fdd9ff;

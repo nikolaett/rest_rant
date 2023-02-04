@@ -1,10 +1,19 @@
 //dependencies
 const React = require('react')
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
 
 //default layout for pages
 function Def (html) {
     return (
         <html>
+            <header className="header">
+                <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
+                    <Container>
+                        <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                    </Container>
+                </Navbar>
+            </header>
             <head>
                 <title>Title</title>
                 <link
@@ -16,7 +25,10 @@ function Def (html) {
                 <link rel="stylesheet" href="/css/style.css"></link>
             </head>
             <body>
-                {html.children}
+                <div className="wrapper">
+                    {html.children}
+                </div>
+                <footer className="footer">Footer Stuff Here</footer>
             </body>
         </html>
     )
