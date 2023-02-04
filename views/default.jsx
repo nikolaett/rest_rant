@@ -28,8 +28,14 @@ function Def (html) {
                 <div className="wrapper">
                     {html.children}
                 </div>
-                <footer className="footer">Footer Stuff Here</footer>
             </body>
+            <footer className="footer">
+                <Navbar sticky="bottom" expand="lg">
+                    <Container>
+                        <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                    </Container>
+                </Navbar>
+            </footer>
         </html>
     )
 }

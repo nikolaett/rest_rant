@@ -3,18 +3,32 @@ h1 {
     color: #6a8d73ff;
 }
 
-html, body{
+html {
     height:100%;
     margin:0;
 }
+
+body {
+    height:100%;
+    margin:50px;
+}
+
 .wrapper {
     min-height:100%;
 }
 
-.footer, .push, .header {
-    height: 50px;
+.footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.navbar{
     background-color: #6a8d73ff;
-    color: #e4ffe1ff;
+}
+
+.header {
+    height: 50px;
 }
 
 /* CSS HEX */
