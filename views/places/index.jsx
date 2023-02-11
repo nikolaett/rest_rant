@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card'
 
 //places index
 function index(data) {
-    let placesFormatted = data.places.map((place) => {
+    let placesFormatted = data.places.map((place, index) => {
         return(
             <div className="col-sm-6">
                 <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className="mb-3">

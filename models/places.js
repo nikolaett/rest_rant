@@ -1,5 +1,4 @@
 module.exports = [{
-    id: '1',
     name: 'H-Thai-ML',
     city: 'Seattle',
     state: 'WA',
@@ -7,7 +6,6 @@ module.exports = [{
     pic: '/images/thai-curry.jpg'
     //Photo by <a href="https://unsplash.com/@grimnoire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">emy</a> on <a href="https://unsplash.com/photos/XoByiBymX20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 }, {
-    id: '2',
     name: 'Coding Cat Cafe',
     city: 'Phoenix',
     state: 'AZ',
