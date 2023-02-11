@@ -12,7 +12,7 @@ function index(data) {
                 <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className="mb-3">
                     <Card.Img variant="top" src={place.pic} alt={place.name}/>
                         <Card.Body>
-                            <Card.Title>{place.name}</Card.Title>
+                            <Card.Title><a href={`/places/${index}`}>{place.name}</a></Card.Title>
                             <Card.Text className="mb-0">{place.cuisines}</Card.Text>
                             <Card.Text>Located in {place.city}, {place.state}.</Card.Text>
                         </Card.Body>
