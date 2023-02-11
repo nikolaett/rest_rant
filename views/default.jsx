@@ -2,6 +2,7 @@
 const React = require('react')
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 //default layout for pages
 function Def (html) {
@@ -11,6 +12,11 @@ function Def (html) {
                 <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
                     <Container>
                         <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                            <Nav className="me-auto">
+                                <Nav.Link href='/places'>Places</Nav.Link>
+                                <Nav.Link href='/places/new'>Add a Place</Nav.Link>
+                            </Nav>
                     </Container>
                 </Navbar>
             </header>
@@ -33,6 +39,11 @@ function Def (html) {
                 <Navbar sticky="bottom" expand="lg">
                     <Container>
                         <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                            <Nav className="me-auto">
+                                <Nav.Link href='#about'>About Us</Nav.Link>
+                                <Nav.Link href='#founders'>Meet The Creators</Nav.Link>
+                            </Nav>
                     </Container>
                 </Navbar>
             </footer>
