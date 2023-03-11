@@ -16,32 +16,36 @@ function edit_form(data) {
                     <Row className="mb-3">
                         <Form.Group as={Col} id="name">
                             <Form.Label>Place Name</Form.Label>
-                            <Form.Control  id="name" name="name" defaultValue={data.place.name} required/>
+                            <Form.Control  id="name" name="name" value={data.place.name} required/>
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
                         <Form.Group as={Col} id="city">
                             <Form.Label>City</Form.Label>
-                            <Form.Control id="city" name="city" defaultValue={data.place.city} />
+                            <Form.Control id="city" name="city" value={data.place.city} />
                         </Form.Group>
 
                         <Form.Group as={Col}>
                             <Form.Label>State</Form.Label>
-                            <Form.Control id="state" name="state" defaultValue={data.place.state}/>
+                            <Form.Control id="state" name="state" value={data.place.state}/>
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
                         <Form.Group as={Col} id="cuisines">
                             <Form.Label>Cuisine Served</Form.Label>
-                            <Form.Control id="cuisines" name="cuisines" defaultValue={data.place.cuisines} required/>
+                            <Form.Control id="cuisines" name="cuisines" value={data.place.cuisines} required/>
                         </Form.Group>
                         <Form.Group as={Col}>
                             <Form.Label>Place Picture</Form.Label>
-                            <Form.Control id="pic" name="pic" defaultValue={data.place.pic} /> 
+                            <Form.Control id="pic" name="pic" value={data.place.pic} /> 
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Founding Year</Form.Label>
+                            <Form.Control id="founded" name="founded" value={data.place.founded} />
                         </Form.Group>
                     </Row>
                     <Button variant="primary" type="submit">
-                        Edit Place
+                        Update Place
                     </Button>
                 </Form>
             </main>
