@@ -7,11 +7,20 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 //new places form
-function new_form() {
+function new_form(data) {
+    let message = ''
+    if (data.message) {
+        message = (
+            <h4 className="alert alert-danger" role="alert">
+                {data.message}
+            </h4>
+        )
+    }
     return(
         <Def>
             <main>
                 <h1>Add a Place Worth Talking About!</h1>
+                {message}
                 <Form method="POST" action="/places">
                     <Row className="mb-3">
                         <Form.Group as={Col}>
@@ -20,7 +29,7 @@ function new_form() {
                         </Form.Group>
                         <Form.Group as={Col}>
                             <Form.Label>Founded Year</Form.Label>
-                            <Form.Control id="founded" name="founded" />
+                            <Form.Control type="number" id="founded" name="founded" value={new Date().getFullYear()} />
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
