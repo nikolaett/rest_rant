@@ -18,6 +18,10 @@ function new_form() {
                             <Form.Label>Place Name</Form.Label>
                             <Form.Control  id="name" name="name" required/>
                         </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Founded Year</Form.Label>
+                            <Form.Control id="founded" name="founded" />
+                        </Form.Group>
                     </Row>
                     <Row className="mb-3">
                         <Form.Group as={Col}>
