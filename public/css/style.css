@@ -1,36 +1,35 @@
+div h1 {
+    padding: 50px;
+    margin: 10px;
+}
+
 h1 {
     text-align: center;
     color: rgb(34, 52, 39);
 }
 
 html {
-    height:100%;
-    margin:0;
+    height: 100%;
 }
 
 body {
-    height:100%;
-    margin:50px;
+    height: auto;
     background-color: rgba(228, 255, 225, 0.738);
 }
 
-.wrapper {
-    min-height:100%;
+main {
+    padding: 100px;
 }
 
 .footer {
-    position: relative;
+    position: fixed;
     height: auto;
-    width: 100%;
 }
 
 .navbar{
     background-color: #6a8d73ff;
 }
 
-/*.header {
-    height: 50px;
-}
 
 /* CSS HEX */
 /*--russian-green: #6a8d73ff;

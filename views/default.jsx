@@ -20,10 +20,18 @@ function Def (html) {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            
+            <Navbar fixed="bottom" expand="lg">
+                    <Container fluid>
+                        <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                            <Nav className="me-auto">
+                                <Nav.Link href='#about'>About Us</Nav.Link>
+                                <Nav.Link href='#founders'>Meet The Creators</Nav.Link>
+                            </Nav>
+                    </Container>
+                </Navbar> 
             <head>
                 <title>Title</title>
-                
+                <script src="https://cdn.jsdelivr.net/npm/react-bootstrap/dist/react-bootstrap.min.js" integrity="sha256-RBXvJRV1Cegu22f4A5hCDHesQG024//DTBKClGz5SGo=" crossOrigin="anonymous"></script>
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -33,22 +41,10 @@ function Def (html) {
                 <link rel="stylesheet" href="/css/style.css"></link>
             </head>
             <body>
-                <div className="wrapper">
+                <Container fluid>
                     {html.children}
-                </div>
+                </Container>
             </body>
-            <footer className="footer">
-                <Navbar sticky="bottom" expand="lg">
-                    <Container>
-                        <Navbar.Brand href='/'>R&R</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                            <Nav className="me-auto">
-                                <Nav.Link href='#about'>About Us</Nav.Link>
-                                <Nav.Link href='#founders'>Meet The Creators</Nav.Link>
-                            </Nav>
-                    </Container>
-                </Navbar>
-            </footer>
         </html>
     )
 }
