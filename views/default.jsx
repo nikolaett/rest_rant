@@ -8,20 +8,22 @@ import Nav from 'react-bootstrap/Nav'
 function Def (html) {
     return (
         <html>
-            <header className="header">
-                <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
-                    <Container>
-                        <Navbar.Brand href='/'>R&R</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                            <Nav className="me-auto">
-                                <Nav.Link href='/places'>Places</Nav.Link>
-                                <Nav.Link href='/places/new'>Add a Place</Nav.Link>
-                            </Nav>
-                    </Container>
-                </Navbar>
-            </header>
+            <Navbar collapseOnSelect fixed="top" bg="dark" variant="dark" expand="lg">
+                <Container fluid>
+                    <Navbar.Brand href='/'>R&R</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="m-auto navbar-nav text-uppercase ml-5 flex">
+                            <Nav.Link href='/places'>Places</Nav.Link>
+                            <Nav.Link href='/places/new'>Add a Place</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+            
             <head>
                 <title>Title</title>
+                
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"

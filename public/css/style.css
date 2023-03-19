@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: #6a8d73ff;
+    color: rgb(34, 52, 39);
 }
 
 html {
@@ -11,6 +11,7 @@ html {
 body {
     height:100%;
     margin:50px;
+    background-color: rgba(228, 255, 225, 0.738);
 }
 
 .wrapper {
@@ -27,7 +28,7 @@ body {
     background-color: #6a8d73ff;
 }
 
-.header {
+/*.header {
     height: 50px;
 }
 

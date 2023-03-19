@@ -9,7 +9,7 @@ function index(data) {
     let placesFormatted = data.places.map((place) => {
         return(
             <div className="row">
-                <div className="col-sm-6 col-md-4 col-lg-3" >
+                <div className="col-sm-6" >
                     <Card bg={'dark'} style={{width: '18rem'}} text={'light'} className="mb-3">
                         <Card.Img variant="top" src={place.pic} alt={place.name}/>
                             <Card.Body>
