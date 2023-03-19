@@ -1,6 +1,6 @@
 # Project REST-Rant
 
-REST-Rant is an app where users can review restaurants.
+REST-Rant is an app where users can review restaurants. App was developed in Visual Studio Code. The Database used to store information was made possible by MongoDB. Deployment of app would be through Heroku.
 
 ## Routes
 ----------------------------------------------------------------------------------
